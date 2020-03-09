@@ -9,7 +9,7 @@ pipeline {
 
     stage('Sonar Analyze ') {
       steps {
-        withSonarQubeEnv(installationName: 'sonar ', credentialsId: 'sonarsecret')
+        withSonarQubeEnv(installationName: 'sonar ', credentialsId: 'sonarqube')
       }
     }
 
